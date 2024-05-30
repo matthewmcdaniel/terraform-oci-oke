@@ -38,6 +38,7 @@ worker_pools = {
     size        = 1,
     create      = false,
   },
+  
   oke-vm-preemptible = {
     description = "OKE-managed Node Pool with preemptible capacity",
     size             = 1,
