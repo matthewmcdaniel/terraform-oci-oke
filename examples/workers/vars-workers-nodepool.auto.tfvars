@@ -38,4 +38,11 @@ worker_pools = {
     size        = 1,
     create      = false,
   },
+  oke-vm-preemptible = {
+    description = "OKE-managed Node Pool with preemptible capacity",
+    size             = 1,
+    shape            = "VM.Standard.E4.Flex",
+    ocpus            = 8,
+    preemptible_config = {"enable": true, "is_preserve_boot_volume": false}
+  }
 }
